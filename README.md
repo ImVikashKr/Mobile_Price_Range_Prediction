@@ -28,7 +28,7 @@ The results showed that XGBoost algorithm performed the best among the three alg
 This model can be deployed as an API to predict the price range of a smartphone based on its key features, which can help customers make informed decisions when purchasing a smartphone and help manufacturers determine the appropriate pricing for their products.
 
 # Future Scope
-The future scope of the project includes incorporating more data, adding more features, using ensemble methods.
+The future scope of the project includes incorporating more data, adding more features, using ensemble methods, comparing other algorithms, deploying the model in real-world scenarios, and addressing the limitations of the model.
 
 
 
