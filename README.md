@@ -1,12 +1,34 @@
-# Mobile_Price_Range_Prediction
-Multi-class Classification.
+#Mobile Price Range Prediction
 
-When a smartphone is purchased, many factors like the Display, Processor, Memory, Camera, Thickness, Battery, Connectivity and others are taken into account . One factor that people do not consider is whether the product is worth the cost. As there are no resources to cross validate the price, people fail in taking the correct decision. This paper looks to solve the problem by taking the historical data pertaining to the key features of smartphones along with its cost and develop a model that will predict the approximate price of the new smartphone with a reasonable accuracy. The dataset used for this purpose has taken into consideration 21 different parameters for predicting the price of the phone.
+This project aims to predict the approximate price range of a smartphone based on its key features using historical data. The dataset used for this purpose includes 21 different parameters and 2000 observations. The dependent variable to be predicted is the price range, which is a multi-class categorical value with 4 classes (0,1,2 and 3). The data is well balanced with 500 observations for each class and minimal missing values.
 
-Random Forest Classifier, XGBoost and Logistic Regression have been used. Hyperparameter tuning is performed for each model.
+#Algorithms and Techniques used
+1. Random Forest Classifier
+2. XGBoost
+3. Logistic Regression
 
-Different metrics like precision, recall, f1 scores, Auc_roc scores and auc_roc curves have been plotted for different algos. Since this is a multi-class classification problem, one vs rest technique was used to calculate scores for each class whenever required.
+#Evaluation Metrics
+1. Precision
+2. Recall
+3. F1 scores
+4. AUC_ROC scores
+5. AUC_ROC curves
 
-XGBoost came out to be the perfect winner. For multiclass F1 scores and Auc_Roc scores one vs rest technique was used to get the metrics for each class.
+#How to Run
+1. Clone the repository
+2. Install the required libraries by running pip install -r requirements.txt
+3. Run the jupyter notebook Mobile_Price_Range_Prediction.ipynb
 
-Based on the accuracy, the appropriate algorithm has been used to predict the prices of the smartphone. This not only helps the customers decide the right phone to purchase, it also helps the owners decide what should be the appropriate pricing of the phone for the features that they offer.
+#Results
+
+The results showed that XGBoost algorithm performed the best among the three algorithms with the highest F1 scores and AUC_ROC scores. Based on the accuracy, XGBoost algorithm is used to predict the prices of the smartphone.
+
+#Deployment
+
+This model can be deployed as an API to predict the price range of a smartphone based on its key features, which can help customers make informed decisions when purchasing a smartphone and help manufacturers determine the appropriate pricing for their products.
+
+#Future Scope
+The future scope of the project includes incorporating more data, adding more features, using ensemble methods.
+
+
+
